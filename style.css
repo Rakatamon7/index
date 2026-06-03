@@ -1,0 +1,144 @@
+/* =========================================
+   1. RESET Y CONFIGURACIÓN GLOBAL
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2B0B59; /* Morado oscuro de fondo */
+    color: #ffffff;            /* Texto blanco global */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contenedor principal adaptable */
+.container, .page {
+    max-width: 1000px;
+    margin: 20px auto;
+    /* Eliminamos el fondo blanco para que se vea el morado 
+       o cámbialo a un tono que te guste */
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* =========================================
+   2. HEADER Y NAVEGACIÓN (Fondo Negro)
+   ========================================= */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px;
+    background: #000000;
+    border-bottom: 3px solid #3b82f6;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand-icon {
+    width: 45px;
+    height: 45px;
+    background: #0048bb;
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.brand-title, .brand-subtitle {
+    color: #ffffff;
+    margin: 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* =========================================
+   3. TEXTO BLANCO (Lo que pediste en image_db57d9.png)
+   ========================================= */
+h1, h2, h3, p, .text {
+    color: #ffffff !important; /* Fuerza el color blanco */
+    margin-bottom: 15px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   4. AJUSTE DE LA IMAGEN Y CARDS
+   ========================================= */
+.profile-photo {
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #940202;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Si quieres que las tarjetas tengan un fondo oscuro sutil */
+.card, .photo-card {
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #6d0000;
+}
+
+/* =========================================
+   5. BOTONES Y FORMULARIO
+   ========================================= */
+button {
+    background-color: #6d0000;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #01254d;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 40px;
+    color: #aaaaaa;
+}
