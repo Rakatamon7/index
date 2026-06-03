@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PWHL - Professional Women's Hockey League</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!-- Header principal: buscador y menú -->
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-icon">DP</span>
+            <div>
+                <p class="brand-title">Hockey</p>
+                <p class="brand-subtitle">Información reciente sobre Hockey</p>
+            </div>
+        </div>
+
+        <form class="search" role="search">
+            <label class="sr-only" for="search-input">Buscar</label>
+            <input id="search-input" type="text" placeholder="Buscar equipos o estadísticas" />
+            <button type="submit">Buscar</button>
+        </form>
+
+        <nav class="main-nav" aria-label="Navegación">
+            <a href="#destacadas">Destacadas</a>
+            <a href="#stats">Estadísticas</a>
+            <a href="#empresas">Equipos</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <!-- Sección principal: Perfil/Hero -->
+        <section class="profile">
+            <img src="./PWHL.webp" alt="Imagen de oficina" class="profile-photo" />
+            <div class="profile-info">
+                <h1>Encuentra información de tus jugadoras favoritas</h1>
+                <div class="profile-meta">
+                    <div>
+                        <p class="meta-label">Ubicación</p>
+                        <p class="meta-value">Loja, Ecuador</p>
+                    </div>
+                    <div>
+                        <p class="meta-label">Actualizado</p>
+                        <p class="meta-value">Hoy</p>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="badge">8 Equipos</button>
+                    <button class="badge badge-outline">1 Copa</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Destacadas (Walter Cup) -->
+        <section class="section" id="destacadas">
+            <header class="section-header">
+                <h2>WALTER CUP</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-olympics">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 9a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M15 9a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M9 9a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M6 15a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M12 15a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                </svg>
+            </header>
+            <p class="text">
+                La Walter Cup es el trofeo anual de la Professional Women's Hockey League (PWHL) en su temporada 2025-26, que enfrenta a los mejores equipos en una serie final. La final de 2026, presentada por Scotiabank, enfrenta a Montreal Victoire contra Ottawa Charge, comenzando el 14 de mayo de 2026, tras eliminar a Minnesota y Boston respectivamente.
+            </p>
+        </section>
+
+        <!-- Sección: Estadísticas/Equipos -->
+        <section class="section" id="stats">
+            <header class="section-header">
+                <h2>EQUIPOS</h2>
+                <svg xmlns="http://www.w3.org/2000/center" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M9 10a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                </svg>
+            </header>
+            <div class="card-grid">
+                <article class="card">
+                    <!-- Espacio para futura tarjeta vacía -->
+                </article>
+                <article class="card">
+                    <p>
+                        Para la temporada 2025-26, la PWHL se compone de ocho equipos tras la incorporación de Seattle y Vancouver, ofreciendo un alto nivel de hockey femenino profesional. Los equipos son: Boston Fleet, Minnesota Frost, Montreal Victoire, New York Sirens, Ottawa Charge, Toronto Sceptres, Seattle Torrent y Vancouver Goldeneyes.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección: Patrocinadores -->
+        <section class="section" id="empresas">
+            <header class="section-header">
+                <h2>PATROCINADORES</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users-group">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                    <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                    <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                </svg>
+            </header>
+            <div class="card-grid card-grid--photos">
+                <article class="photo-card">
+                    <div class="photo-placeholder"></div>
+                    <p>
+                        La PWHL cuenta con un sólido grupo de patrocinadores fundadores y corporativos, destacando Bauer, CCM, Aero, Aeroplan, Aveeno, Barbie, DoorDash y EA Sports. Además, han firmado alianzas estratégicas con e.l.f. Cosmetics, Molson (patrocinio de camisetas), BIC (rasuradora oficial en Canadá) y Global Industrial (suministros industriales).
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 PWHL - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
