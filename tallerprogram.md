@@ -435,3 +435,241 @@ a {
   margin-bottom: 8px;
 }
 
+
+
+
+
+
+
+/* 1) Reset y box sizing (evita margenes raros del navegador) */
+* {
+  margin: 0;          /* elimina margenes por defecto */
+  padding: 0;         /* elimina relleno por defecto */
+  box-sizing: border-box; /* incluye padding y borde en el ancho */
+}
+
+/* 2) Variables de color (facil de cambiar en todo el sitio) */
+:root {
+  --bg: #12003d;
+  --text: #064df3;
+  --muted: #64748b;
+  --primary: #000000;
+  --card: #000000;
+  --border: #2c73cf;
+  --shadow: 0 12px 24px rgba(1, 69, 228, 0.08);
+}
+
+/* 3) Estilos globales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  background: rgb(0, 0, 0);
+  border-bottom: 5px solid var(--border);
+  margin-bottom: 12px;
+}
+
+.site-header strong {
+  color: wheat;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* Corregido opcionalmente a "title" por si acaso en tu HTML lo pusiste bien */
+.brand-title, .brand-tittle {
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  background: rgb(138, 220, 245);
+  padding: 8px;
+  border-radius: 999px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+}
+
+.search button {
+  border: none;
+  background: var(--primary);
+  color: rgb(255, 255, 255);
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.main-nav a:hover {
+  background: var(--primary);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.section { 
+  margin-top: 28px; 
+}
+
+
+.profile {
+  display: grid;
+  grid-template-columns: 260px 1fr; 
+  gap: 32px;                        
+  background: var(--card);          
+  border-radius: 14px;              
+  padding: 45px 24px 24px 24px;     
+  box-shadow: var(--shadow);
+}
+
+.profile-photo-container {
+  position: relative;
+  width: 260px;  
+  height: 260px; 
+  border-radius: 16px;
+  overflow: hidden; 
+  margin-top: 20px;                
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+  color: #ffffff;
+}
+
+.profile-overlay-text h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.profile-overlay-text p {
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  margin-top: 4px;
+}
+.bage{
+  border: none;
+  background: #1f1d1d;
+  color: #064df3;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  border: #fafafa;
+}
+.border-outline{
+  border: 1px solid #064df3;
+}
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(outo-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+.card{
+  background: var(--card);
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.cord-title{
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.card-value{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.card-grip-photos{
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+.photo-card{
+  background: rgb(0, 0, 0);
+  border-radius: 16px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.photo-placeholder{
+  height: 120px;
+  border-radius: 12px;
+  background: #7cbdff;
+    margin-bottom: 8px;
+}
+.card-subtitle{
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.site-footer{
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+}
+
